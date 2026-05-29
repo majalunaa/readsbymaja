@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Example Book Title",
-    "author": "Author Name",
-    "dateRead": "2024-03",
+    "title": "Krabat",
+    "author": "Otfried Preußler",
+    "dateRead": "2026-05-29",
     "rating": 4,
-    "spineImage": "images/spines/example-spine.jpg",
-    "coverImage": "images/covers/example-cover.jpg",
+    "spineImage": "images/spines/krabat-spine.jpg",
+    "coverImage": "images/covers/krabat-cover.jpg",
     "spineColor": "#8B4513"
   }
 ]
