@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — reads by maja</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>book admin</h1>
+    <a href="../index.html">← back to shelf</a>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>add a book</h2>
+      <form id="book-form">
+        <div class="field">
+          <label for="title">Title</label>
+          <input type="text" id="title" required>
+        </div>
+        <div class="field">
+          <label for="author">Author</label>
+          <input type="text" id="author" required>
+        </div>
+        <div class="field">
+          <label for="dateRead">Date Read (YYYY-MM)</label>
+          <input type="month" id="dateRead" required>
+        </div>
+        <div class="field">
+          <label for="rating">Rating (1–5)</label>
+          <div class="star-picker" id="star-picker">
+            <span data-val="1">★</span>
+            <span data-val="2">★</span>
+            <span data-val="3">★</span>
+            <span data-val="4">★</span>
+            <span data-val="5">★</span>
+          </div>
+          <input type="hidden" id="rating" value="0">
+        </div>
+        <div class="field">
+          <label for="spineColor">Spine fallback color (if no image)</label>
+          <input type="color" id="spineColor" value="#8B4513">
+        </div>
+        <div class="field">
+          <label for="spineImage">Spine image</label>
+          <input type="file" id="spineImage" accept="image/*">
+          <small>Scan/photo of the book spine</small>
+        </div>
+        <div class="field">
+          <label for="coverImage">Cover image</label>
+          <input type="file" id="coverImage" accept="image/*">
+          <small>Scan/photo of the book cover</small>
+        </div>
+        <button type="submit">Add book</button>
+      </form>
+    </section>
+
+    <section class="export-section">
+      <h2>current books.json</h2>
+      <p class="hint">After adding books, copy this and save it as <code>data/books.json</code> in your project, then move the images to <code>images/spines/</code> and <code>images/covers/</code>.</p>
+      <textarea id="json-output" readonly></textarea>
+      <button id="copy-btn">Copy JSON</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

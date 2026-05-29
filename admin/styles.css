@@ -1,0 +1,124 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Georgia', serif;
+  background: #f5f0e8;
+  color: #2c1a0e;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 0.3rem;
+}
+
+header a {
+  color: #8B4513;
+  font-size: 0.85rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.4rem;
+}
+
+.form-section, .export-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="month"],
+input[type="color"] {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+input[type="file"] {
+  font-size: 0.85rem;
+}
+
+small {
+  color: #999;
+  font-size: 0.75rem;
+}
+
+.star-picker {
+  display: flex;
+  gap: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.star-picker span.active {
+  color: #c8a84b;
+}
+
+button {
+  background: #8B4513;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+button:hover { background: #6b3a2a; }
+
+textarea {
+  width: 100%;
+  height: 200px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 0.7rem;
+}
+
+.hint {
+  font-size: 0.82rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+code {
+  background: #f0ebe3;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Example Book Title",
+    "author": "Author Name",
+    "dateRead": "2024-03",
+    "rating": 4,
+    "spineImage": "images/spines/example-spine.jpg",
+    "coverImage": "images/covers/example-cover.jpg",
+    "spineColor": "#8B4513"
+  }
+]
